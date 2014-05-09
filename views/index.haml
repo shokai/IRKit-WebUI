@@ -1,0 +1,20 @@
+- content_for :header do
+  %h1= app_name
+
+- content_for :html_foot do
+  %script{:src => "/jquery.js"}
+  %script{:src => "/index.js"}
+
+%div#status
+  %p.temp_sensor
+  %p.light_sensor
+
+%h2 IR Data
+%div#ir
+  %p.buttons
+    - IRKit::App::Data["IR"].keys.each do |name|
+      %input{:type => :button, :value => name, :class => "btn_ir_write btn"}
+  %p.status
+
+%h2 Logs
+%div#logs
