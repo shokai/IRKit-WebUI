@@ -17,6 +17,16 @@ Install Dependencies
     % bundle install
 
 
+Setup
+-----
+
+save IR Data uses [irkit rubygem](https://github.com/shokai/ruby-irkit)
+
+    % irkit --device:add myhouse
+    % irkit --get 冷房ON
+    % irkit --post 冷房ON  # test
+
+
 Run
 ---
 
