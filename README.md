@@ -20,12 +20,18 @@ Install Dependencies
 Run
 ---
 
-    % export BASIC_AUTH_USERNAME=username
-    % export BASIC_AUTH_PASSWORD=password
     % export IRKIT=192.168.1.106
     % bundle exec rackup config.ru -p 5000
 
 => http://localhost:5000
+
+
+### password
+
+if you need
+
+    % export BASIC_AUTH_USERNAME=username
+    % export BASIC_AUTH_PASSWORD=password
 
 
 ## Install as a Service
